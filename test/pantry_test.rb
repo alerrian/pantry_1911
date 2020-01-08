@@ -23,7 +23,7 @@ class RecipeTest < Minitest::Test
   end
 
   def test_pantry_can_check_stock
-    assert_equal 0, @pantry.check_stock(@ingredient1)
+    assert_equal 0, @pantry.stock_check(@ingredient1)
   end
 
   def test_pantry_can_restock
