@@ -14,6 +14,10 @@ class Pantry
   end
 
   def enough_ingredients_for?(recipe)
-    require 'pry'; binding.pry
+    recipe.ingredients_required.each do |ingredient, amount|
+      @stock.each do |k, v|
+        require 'pry'; binding.pry
+      end
+    end
   end
 end
