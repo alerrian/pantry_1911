@@ -21,4 +21,8 @@ class RecipeTest < Minitest::Test
 
     assert_equal expected, @pantry.stock
   end
+
+  def test_pantry_can_check_stock
+    assert_equal 0, @pantry.check_stock(@ingredient1)
+  end
 end
