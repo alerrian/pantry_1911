@@ -8,4 +8,6 @@ class Pantry
   def check_stock(ingredient)
     @stock[ingredient]
   end
+
+  
 end
