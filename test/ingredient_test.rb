@@ -1,3 +1,5 @@
+require 'Minitest/autorun'
+require 'Minitest/pride'
 require_relative '../lib/ingredient'
 
 class IngredientTest < Minitest::Test
