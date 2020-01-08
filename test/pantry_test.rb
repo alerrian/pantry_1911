@@ -41,5 +41,13 @@ class RecipeTest < Minitest::Test
     @recipe.add_ingredient(@ingredient2, 8)
 
     assert_equal false, @pantry.enough_ingredients_for?(@recipe)
+
+    @pantry.restock(@ingredient2, 7)
+
+    assert_equal false, @pantry.enough_ingredients_for?(@recipe)
+
+    @pantry.restock(@ingredient2, 1)
+
+    assert_equal true, @pantry.enough_ingredients_for?(@recipe)
   end
 end
