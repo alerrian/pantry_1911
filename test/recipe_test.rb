@@ -17,4 +17,10 @@ class RecipeTest < Minitest::Test
   def test_a_recipe_has_attributes
     assert_equal 'Mac and Cheese', @recipe.name
   end
+
+  def test_a_recipe_stores_ingredients_required
+    expected = {}
+
+    assert_equal expected, @recipe.ingredients_required
+  end
 end
